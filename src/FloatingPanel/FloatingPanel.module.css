@@ -1,0 +1,40 @@
+.panel {
+	position: relative;
+	padding: 8px;
+	border-radius: 8px;
+	min-width: 220px;
+	max-width: 360px;
+	text-align: left;
+	transform-origin: center center;
+	font-family: var(--font-main);
+	cursor: pointer;
+	transition: all 0.5s cubic-bezier(0.2, 0.82, 0.3, 1);
+}
+
+.panel:hover {
+	padding: 12px;
+	border-radius: 10px;
+}
+
+.dottedDiv {
+	padding: 12px;
+	border: 2px dashed rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+}
+
+.title {
+	margin: 0 0 8px 0;
+	font-size: 24px;
+	font-weight: 700;
+	user-select: none;
+	color: #ffffff;
+}
+
+.description {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	user-select: none;
+	color: #d8d8d8;
+}
