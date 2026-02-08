@@ -76,7 +76,7 @@ function PrimaryFloatPanels() {
 				}}
 			>
 				<ContactButton
-					onClick={() => window.open("https://www.github.com")}
+					onClick={() => window.open("https://x.com/real_y29r")}
 					image={"./BrandImages/X.svg"}
 				/>
 				<ContactButton
@@ -84,7 +84,7 @@ function PrimaryFloatPanels() {
 					image={"./BrandImages/Github.svg"}
 				/>
 				<ContactButton
-					onClick={() => window.open("https://www.github.com")}
+					onClick={() => window.open("https://discord.com/users/1160614251090690068")}
 					image={"./BrandImages/Discord.svg"}
 				/>
 				<ContactButton
