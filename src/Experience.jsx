@@ -29,7 +29,7 @@ function Experience() {
 		const speed = Math.max(0, 1 - elapsed / duration);
 
 		if (controlsRef.current) {
-			controlsRef.current.autoRotateSpeed = speed * 4800 * delta;
+			controlsRef.current.autoRotateSpeed = speed * 2500 * delta;
 		}
 	});
 
