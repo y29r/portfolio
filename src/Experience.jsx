@@ -10,6 +10,7 @@ import PrimaryFloatPanels from "./PrimaryFloatPanels.jsx"
 import ExperienceFloatPanels from "./ExperienceFloatPanels.jsx"
 import ProjectsFloatPanels from "./ProjectsFloatPanels.jsx";
 import AboutMeFloatPanels from "./AboutMeFloatPanels.jsx";
+import SkillsFloatPanels from "./SkillsFloatPanels.jsx";
 
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
@@ -133,6 +134,7 @@ function Experience() {
 			<ExperienceFloatPanels />
 			<ProjectsFloatPanels />
 			<AboutMeFloatPanels />
+			<SkillsFloatPanels />
 		</Float>
 	</>
 }

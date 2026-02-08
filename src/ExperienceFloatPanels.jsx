@@ -21,7 +21,7 @@ function ExperienceFloatPanels() {
 
 	return <>
 		<FloatingPanel
-			position={[3, 0, -0.75]}
+			position={[-2.406, 0.647, -0.21]}
 		>
 			<TitleLabel>FULLSTACK DEVELOPER</TitleLabel>
 			<SubtitleLabel>FREELANCE</SubtitleLabel>
@@ -40,7 +40,7 @@ function ExperienceFloatPanels() {
 		</FloatingPanel>
 
 		<FloatingPanel
-			position={[2, 0, 1.5]}
+			position={[-1.85, 0.647, 1.552]}
 		>
 			<TitleLabel>BACKEND DEVELOPER</TitleLabel>
 			<SubtitleLabel>GAME-JAM COMPETITION</SubtitleLabel>
@@ -67,7 +67,7 @@ function ExperienceFloatPanels() {
 		</FloatingPanel>
 
 		<FloatingPanel
-			position={[1, 0, -2.2]}
+			position={[-0.21, 0.647, 2.406]}
 		>
 			<TitleLabel>FULLSTACK DEVELOPER</TitleLabel>
 			<SubtitleLabel>FREELANCE</SubtitleLabel>
@@ -87,7 +87,7 @@ function ExperienceFloatPanels() {
 
 		<FloatingPanel
 			onClick={() => setExperiencePath(null)}
-			position={[0.5, -0.7, 2.3]}
+			position={[-1.552, 0.647, -1.85]}
 			title="BACK"
 			description="Back to the main menu"
 		>
@@ -97,4 +97,4 @@ function ExperienceFloatPanels() {
 	</>
 }
 
-export default ExperienceFloatPanels
+export default ExperienceFloatPanels;

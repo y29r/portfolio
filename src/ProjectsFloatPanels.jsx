@@ -23,7 +23,7 @@ function ProjectsFloatPanels() {
 
 	return <>
 		<FloatingPanel
-			position={[0.7, 0.2, 2.2]}
+			position={[-0.646, 0.192, 2.407]}
 		>
 			<TitleLabel>CATALOG V2</TitleLabel>
 			<SubtitleLabel>PERSONAL PROJECT</SubtitleLabel>
@@ -45,7 +45,7 @@ function ProjectsFloatPanels() {
 		</FloatingPanel>
 
 		<FloatingPanel
-			position={[- 1.7, 0.1, 2]}
+			position={[1.409, 0.401, 2.026]}
 		>
 			<TitleLabel>TOME</TitleLabel>
 			<SubtitleLabel>OPEN&mdash;SOURCE LIBRARY</SubtitleLabel>
@@ -82,7 +82,7 @@ function ProjectsFloatPanels() {
 		</FloatingPanel>
 
 		<FloatingPanel
-			position={[- 2.5, -0.05, 0.2]}
+			position={[2.468, 0.401, 0.007]}
 		>
 			<TitleLabel>BEAVER</TitleLabel>
 			<SubtitleLabel>OPEN&mdash;SOURCE LIBRARY</SubtitleLabel>
@@ -117,7 +117,7 @@ function ProjectsFloatPanels() {
 		</FloatingPanel>
 
 		<FloatingPanel
-			position={[- 1.7, -0.2, -1.6]}
+			position={[1.422, 0.401, -2.017]}
 		>
 			<TitleLabel>SKYDIVE TOWER</TitleLabel>
 			<SubtitleLabel>PERSONAL GAME</SubtitleLabel>
@@ -137,7 +137,7 @@ function ProjectsFloatPanels() {
 		</FloatingPanel>
 
 		<FloatingPanel
-			position={[0, 0, -2.6]}
+			position={[-0.837, 0.401, -2.321]}
 		>
 			<TitleLabel>UNTITLED BOAT GAME</TitleLabel>
 			<SubtitleLabel>PERSONAL GAME</SubtitleLabel>
@@ -149,15 +149,13 @@ function ProjectsFloatPanels() {
 			</UnorderedList>
 			<HorizontalLayout>
 				<SkillButton icon={"./LanguageIcons/Luau.svg"}>Luau</SkillButton>
-				<SkillButton>Replication</SkillButton>
-				<SkillButton>Optimization</SkillButton>
 				<SkillButton>System Design</SkillButton>
 			</HorizontalLayout>
 		</FloatingPanel>
 
 		<FloatingPanel
 			onClick={() => setExperiencePath(null)}
-			position={[2.2, 0.5, 1]}
+			position={[-2.257, -0.218, 1.053]}
 			title="BACK"
 			description="Back to the main menu"
 		>
@@ -167,4 +165,4 @@ function ProjectsFloatPanels() {
 	</>
 }
 
-export default ProjectsFloatPanels
+export default ProjectsFloatPanels;

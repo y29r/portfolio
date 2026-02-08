@@ -20,7 +20,7 @@ function FloatingPanel({
 	const [sizeFactor, setSizeFactor] = useState(2);
 	const { camera } = useThree();
 
-	useFrame((state, delta) => {
+	useFrame(() => {
 		const worldCenter = new Vector3(0, 0, 0);
 
 		const panelPosition = new Vector3(...position);
@@ -33,9 +33,6 @@ function FloatingPanel({
 
 		const normalAngle = Math.acos(Math.max(-1, Math.min(1, angleDifference)));
 		const newVisibilityFactor = Math.max(0, 1 - (normalAngle / MAX_PANEL_VISIBLE_ANGLE));
-
-		// if (Math.abs(newVisibilityFactor - visibilityFactor) < 0.01)
-		// 	return;
 
 		window.requestAnimationFrame(() => {
 			setVisibilityFactor(newVisibilityFactor);
