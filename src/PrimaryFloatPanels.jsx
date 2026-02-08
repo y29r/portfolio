@@ -15,26 +15,26 @@ function PrimaryFloatPanels() {
 
 	return <>
 		<FloatingPanel
-			onClick={() => setExperiencePath("about me")}
-			position={[1.231, 0.434, -2.132]}
-		>
-			<TitleLabel>ABOUT ME</TitleLabel>
-			<DescriptionLabel>18-year-old self-taught fullstack and game programmer based in London, focused on building creative, system-driven experiences.</DescriptionLabel>
-			<StandardButton
-				text="SEE MORE"
-				onClick={() => setExperiencePath("about me")}
-			/>
-		</FloatingPanel>
-
-		<FloatingPanel
 			onClick={() => setExperiencePath("experience")}
 			position={[-1.552, 0.647, -1.85]}
 		>
 			<TitleLabel>EXPERIENCE</TitleLabel>
-			<DescriptionLabel>Over six years building games and applications, with deep experience in HTML and React-style reconciliation frameworks and commissions for top Roblox developers.</DescriptionLabel>
+			<DescriptionLabel>Worked on a handful of commissioned game projects and participated in multiple team-based game jams.</DescriptionLabel>
 			<StandardButton
-				text="SEE MORE"
+				text="SEE EXPERIENCE"
 				onClick={() => setExperiencePath("experience")}
+			/>
+		</FloatingPanel>
+
+		<FloatingPanel
+			onClick={() => setExperiencePath("about me")}
+			position={[1.231, 0.434, -2.132]}
+		>
+			<TitleLabel>ABOUT ME</TitleLabel>
+			<DescriptionLabel>18/y old full&mdash;stack programmer based in London, focused on building games and the systems behind them.</DescriptionLabel>
+			<StandardButton
+				text="READ MORE"
+				onClick={() => setExperiencePath("about me")}
 			/>
 		</FloatingPanel>
 
@@ -43,9 +43,9 @@ function PrimaryFloatPanels() {
 			position={[2.425, 0.434, 0.428]}
 		>
 			<TitleLabel>SKILLS</TitleLabel>
-			<DescriptionLabel>Five years of Luau experience alongside React, React-Luau, JavaScript, SQL databases, 3,000+ hours in Blender, and extensive UI development work.</DescriptionLabel>
+			<DescriptionLabel>Years of hands-on experience across programming languages, UI frameworks, and 3D tools.</DescriptionLabel>
 			<StandardButton
-				text="SEE MORE"
+				text="SEE STACK & MORE"
 				onClick={() => setExperiencePath("skills")}
 			/>
 		</FloatingPanel>
@@ -55,9 +55,9 @@ function PrimaryFloatPanels() {
 			position={[-2.257, -0.218, 1.053]}
 		>
 			<TitleLabel>PROJECTS</TitleLabel>
-			<DescriptionLabel>A collection of system-heavy projects including 3D websites, catalog API tooling with rotating proxies, and open-source work available on GitHub.</DescriptionLabel>
+			<DescriptionLabel>Hundreds of personal and team projects built over six years, ranging from small modules to large system-heavy builds.</DescriptionLabel>
 			<StandardButton
-				text="SEE MORE"
+				text="SEE SOME"
 				onClick={() => setExperiencePath("projects")}
 			/>
 		</FloatingPanel>

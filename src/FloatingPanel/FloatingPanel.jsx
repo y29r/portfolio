@@ -12,7 +12,6 @@ const MAX_PANEL_VISIBLE_ANGLE = Math.PI * 0.64;
 
 function FloatingPanel({
 	position = [0, 0, 0],
-	fadeSpeed = 100,
 	onClick,
 	children,
 }) {

@@ -156,11 +156,9 @@ function ProjectsFloatPanels() {
 		<FloatingPanel
 			onClick={() => setExperiencePath(null)}
 			position={[-2.257, -0.218, 1.053]}
-			title="BACK"
-			description="Back to the main menu"
 		>
 			<TitleLabel>BACK</TitleLabel>
-			<DescriptionLabel>Back to the main menu</DescriptionLabel>
+			<DescriptionLabel>Return to the main menu</DescriptionLabel>
 		</FloatingPanel>
 	</>
 }

@@ -27,9 +27,10 @@ function ExperienceFloatPanels() {
 			<SubtitleLabel>FREELANCE</SubtitleLabel>
 			<DateLabel start="Jan. 2024" end="Oct. 2025"></DateLabel>
 			<UnorderedList>
-				<ListLabel>Designed and implemented a scalable animation synchronization system to ensure consistent state across clients</ListLabel>
-				<ListLabel>Refactored the majority of the frontend and backend codebase to improve structure, readability, and long-term maintainability</ListLabel>
-				<ListLabel>Identified and replaced outdated, unreliable logic with modern, more robust implementations</ListLabel>
+				<ListLabel>Built a custom animation sync system supporting 600+ emotes with reliable client replication</ListLabel>
+				<ListLabel>Rewrote most of the game’s codebase to replace unstable and hard-to-scale logic</ListLabel>
+				<ListLabel>Fixed major data saving and loading issues and reworked the database structure</ListLabel>
+				<ListLabel>Added player leaderboards and contributed numerous smaller gameplay and system improvements</ListLabel>
 			</UnorderedList>
 			<HorizontalLayout>
 				<SkillButton icon={"./LanguageIcons/Luau.svg"}>Luau</SkillButton>
@@ -46,10 +47,10 @@ function ExperienceFloatPanels() {
 			<SubtitleLabel>GAME-JAM COMPETITION</SubtitleLabel>
 			<DateLabel start="Feb. 2025" end="Feb. 2025"></DateLabel>
 			<UnorderedList>
-				<ListLabel>Participated in a 72-hour team-based game jam focused on rapid prototyping and iteration</ListLabel>
-				<ListLabel>Built core gameplay systems including dialogue, puzzles, and minigames within a limited development window</ListLabel>
-				<ListLabel>Helped deliver a complete narrative-driven game with multiple NPCs and interactive mechanics</ListLabel>
-				<ListLabel>Project was shortlisted as a top contender in the competition</ListLabel>
+				<ListLabel>Took part in a 72-hour team game jam centered around the theme "computers"</ListLabel>
+				<ListLabel>Implemented puzzles, minigames, dialogue, and core interactions</ListLabel>
+				<ListLabel>Built camera work, sound effects, and intro/outro sequences</ListLabel>
+				<ListLabel>Project was shortlisted as one of the top entries</ListLabel>
 			</UnorderedList>
 			<HorizontalLayout>
 				<SkillButton icon={"./LanguageIcons/Luau.svg"}>Luau</SkillButton>
@@ -73,10 +74,9 @@ function ExperienceFloatPanels() {
 			<SubtitleLabel>FREELANCE</SubtitleLabel>
 			<DateLabel start="Oct. 2024" end="Oct. 2024"></DateLabel>
 			<UnorderedList>
-				<ListLabel>Built core interactive systems such as item pickup logic and contextual camera effects</ListLabel>
-				<ListLabel>
-					Designed and implemented a randomized tower generation pipeline inspired by Tower of Hell&mdash;style gameplay
-				</ListLabel>
+				<ListLabel>Built a procedural tower generation system for a Tower of Hell&mdash;style game</ListLabel>
+				<ListLabel>Implemented pickups, camera effects, and progression features</ListLabel>
+				<ListLabel>Added leaderboards and other supporting systems</ListLabel>
 			</UnorderedList>
 			<HorizontalLayout>
 				<SkillButton icon={"./LanguageIcons/Luau.svg"}>Luau</SkillButton>
@@ -88,11 +88,9 @@ function ExperienceFloatPanels() {
 		<FloatingPanel
 			onClick={() => setExperiencePath(null)}
 			position={[-1.552, 0.647, -1.85]}
-			title="BACK"
-			description="Back to the main menu"
 		>
 			<TitleLabel>BACK</TitleLabel>
-			<DescriptionLabel>Back to the main menu</DescriptionLabel>
+			<DescriptionLabel>Return to the main menu</DescriptionLabel>
 		</FloatingPanel>
 	</>
 }
