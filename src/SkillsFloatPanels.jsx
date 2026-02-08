@@ -27,9 +27,10 @@ function SkillsFloatPanels() {
 				<HorizontalLayout>
 					<SkillButton icon={"./LanguageIcons/Lua.svg"}>Lua</SkillButton>
 					<SkillButton icon={"./LanguageIcons/Luau.svg"}>Luau</SkillButton>
+					<SkillButton icon={"./LanguageIcons/TypeScript.svg"}>TypeScript</SkillButton>
+					<SkillButton icon={"./LanguageIcons/Python.svg"}>Python</SkillButton>
 					<SkillButton icon={"./LanguageIcons/Rust.svg"}>Rust</SkillButton>
 					<SkillButton icon={"./LanguageIcons/CSharp.svg"}>C#</SkillButton>
-					<SkillButton icon={"./LanguageIcons/TypeScript.svg"}>TypeScript</SkillButton>
 				</HorizontalLayout>
 			</div>
 		</FloatingPanel>
@@ -46,8 +47,9 @@ function SkillsFloatPanels() {
 			>
 				<HorizontalLayout>
 					<SkillButton icon={"./LanguageIcons/Three.js.svg"}>ThreeJS</SkillButton>
-					<SkillButton icon={"./LanguageIcons/React.svg"}>React</SkillButton>
 					<SkillButton icon={"./LanguageIcons/React.svg"}>React-luau</SkillButton>
+					<SkillButton icon={"./LanguageIcons/React.svg"}>React</SkillButton>
+
 				</HorizontalLayout>
 			</div>
 		</FloatingPanel>
