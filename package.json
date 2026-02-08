@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "https://y29r.github.io/portfolio-website/",
+  "homepage": "https://y29r.github.io/portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
