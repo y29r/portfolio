@@ -1,6 +1,5 @@
 import FloatingPanel from "./FloatingPanel/FloatingPanel.jsx";
 
-import StandardButton from "./StandardButton/StandardButton.jsx"
 import ContactButton from "./ContactButton/ContactButton.jsx"
 
 import DateLabel from "./DateLabel/DateLabel.jsx";
@@ -11,9 +10,8 @@ import UnorderedList from "./UnorderedList/UnorderedList.jsx";
 import ListLabel from "./ListLabel/ListLabel.jsx";
 import SkillButton from "./SkillButton/SkillButton.jsx";
 import HorizontalLayout from "./HorizontalLayout/HorizontalLayout.jsx";
-import HyperlinkLabel from "./HyperlinkLabel/HyperlinkLabel.jsx";
 
-import { useExperiencePath } from "./ExperiencePathContext.jsx"
+import { useExperiencePath } from "./Contexts/ExperiencePathContext.jsx"
 
 function ProjectsFloatPanels() {
 	const { experiencePath, setExperiencePath } = useExperiencePath();

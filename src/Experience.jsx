@@ -4,7 +4,8 @@ import { OrbitControls, Float, Html, useCamera } from '@react-three/drei';
 
 import { FlowFieldParticles } from "./InstanceEffects/FieldFlowParticles.jsx"
 
-import { useExperiencePath } from "./ExperiencePathContext.jsx"
+import { useExperiencePath } from "./Contexts/ExperiencePathContext.jsx"
+import { useStartScreenContext } from "./Contexts/StartScreenContext.jsx";
 
 import PrimaryFloatPanels from "./PrimaryFloatPanels.jsx"
 import ExperienceFloatPanels from "./ExperienceFloatPanels.jsx"
@@ -16,6 +17,11 @@ import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 
 function Experience() {
+	const { opened } = useStartScreenContext();
+	if (opened) {
+		return;
+	}
+
 	const { experiencePath, setExperiencePath } = useExperiencePath();
 
 	const controlsRef = useRef();
@@ -115,27 +121,27 @@ function Experience() {
 				</mesh>
 			</FlowFieldParticles>
 
-			<FlowFieldParticles
-				size={1.258}
-				shape="disc"
-				timeScale={0.05}
-				strength={0.002}
-				disturbIntensity={1}
-				positionScale={[4, 5, 3.25]}
-				interactive={false}
-			>
-				<mesh>
-					<icosahedronGeometry args={[8, 5]} />
-					<meshStandardMaterial color="#cdcdcd" />
-				</mesh>
-			</FlowFieldParticles>
-
 			<PrimaryFloatPanels />
 			<ExperienceFloatPanels />
 			<ProjectsFloatPanels />
 			<AboutMeFloatPanels />
 			<SkillsFloatPanels />
 		</Float>
+
+		<FlowFieldParticles
+			size={1.258}
+			shape="disc"
+			timeScale={0.05}
+			strength={0.002}
+			disturbIntensity={1}
+			positionScale={[4, 5, 3.25]}
+			interactive={false}
+		>
+			<mesh>
+				<icosahedronGeometry args={[8, 5]} />
+				<meshStandardMaterial color="#cdcdcd" />
+			</mesh>
+		</FlowFieldParticles>
 	</>
 }
 

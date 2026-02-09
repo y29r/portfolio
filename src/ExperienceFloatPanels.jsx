@@ -11,7 +11,7 @@ import ListLabel from "./ListLabel/ListLabel.jsx";
 import SkillButton from "./SkillButton/SkillButton.jsx";
 import HorizontalLayout from "./HorizontalLayout/HorizontalLayout.jsx";
 
-import { useExperiencePath } from "./ExperiencePathContext.jsx"
+import { useExperiencePath } from "./Contexts/ExperiencePathContext.jsx"
 
 function ExperienceFloatPanels() {
 	const { experiencePath, setExperiencePath } = useExperiencePath();

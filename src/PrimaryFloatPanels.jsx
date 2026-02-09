@@ -5,7 +5,7 @@ import TitleLabel from "./TitleLabel/TitleLabel.jsx";
 import ContactButton from "./ContactButton/ContactButton.jsx";
 import DescriptionLabel from "./DescriptionLabel/DescriptionLabel.jsx"
 
-import { useExperiencePath } from "./ExperiencePathContext.jsx"
+import { useExperiencePath } from "./Contexts/ExperiencePathContext.jsx"
 
 function PrimaryFloatPanels() {
 	const { experiencePath, setExperiencePath } = useExperiencePath();
@@ -21,9 +21,10 @@ function PrimaryFloatPanels() {
 			<TitleLabel>EXPERIENCE</TitleLabel>
 			<DescriptionLabel>Worked on a handful of commissioned game projects and participated in multiple team-based game jams.</DescriptionLabel>
 			<StandardButton
-				text="SEE EXPERIENCE"
 				onClick={() => setExperiencePath("experience")}
-			/>
+			>
+				SEE EXPERIENCE
+			</StandardButton>
 		</FloatingPanel>
 
 		<FloatingPanel
@@ -33,9 +34,10 @@ function PrimaryFloatPanels() {
 			<TitleLabel>ABOUT ME</TitleLabel>
 			<DescriptionLabel>18/y old full&mdash;stack programmer based in London, focused on building games and the systems behind them.</DescriptionLabel>
 			<StandardButton
-				text="READ MORE"
 				onClick={() => setExperiencePath("about me")}
-			/>
+			>
+				READ MORE
+			</StandardButton>
 		</FloatingPanel>
 
 		<FloatingPanel
@@ -45,9 +47,10 @@ function PrimaryFloatPanels() {
 			<TitleLabel>SKILLS</TitleLabel>
 			<DescriptionLabel>Years of hands-on experience across programming languages, UI frameworks, and 3D tools.</DescriptionLabel>
 			<StandardButton
-				text="SEE STACK & MORE"
 				onClick={() => setExperiencePath("skills")}
-			/>
+			>
+				SEE STACK & MORE
+			</StandardButton>
 		</FloatingPanel>
 
 		<FloatingPanel
@@ -57,9 +60,10 @@ function PrimaryFloatPanels() {
 			<TitleLabel>PROJECTS</TitleLabel>
 			<DescriptionLabel>Hundreds of personal and team projects built over six years, ranging from small modules to large system-heavy builds.</DescriptionLabel>
 			<StandardButton
-				text="SEE SOME"
 				onClick={() => setExperiencePath("projects")}
-			/>
+			>
+				SEE SOME
+			</StandardButton>
 		</FloatingPanel>
 
 		<FloatingPanel

@@ -4,16 +4,22 @@ import { Canvas } from '@react-three/fiber';
 
 import Experience from "./Experience.jsx"
 
-import { ExperienceContext } from "./ExperiencePathContext.jsx"
+import StartScreen from "./StartScreen/StartScreen.jsx";
 
-import './fonts.css';
+import { ExperienceContext } from "./Contexts/ExperiencePathContext.jsx"
+import { StartContext } from "./Contexts/StartScreenContext.jsx";
+
+import "./fonts.css";
 
 export function App() {
 	return (
 		<ExperienceContext>
-			<Canvas>
-				<Experience />
-			</Canvas>
+			<StartContext>
+				<StartScreen />
+				<Canvas>
+					<Experience />
+				</Canvas>
+			</StartContext>
 		</ExperienceContext>
 	);
 }

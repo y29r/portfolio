@@ -1,0 +1,149 @@
+.modal {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: #050408;
+	z-index: 25;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--font-main);
+}
+
+.layout,
+.mouseBackground {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	animation: fade-in 1.25s ease-in-out;
+}
+
+.mouseContainer {
+	position: absolute;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	animation: mouse-movement 2s ease-in-out infinite alternate;
+}
+
+.mouseLine {
+	width: 230px;
+	height: 2px;
+	background-color: #ffffff33;
+	background: linear-gradient(to left, #ffffff00, #ffffff33, #ffffff00);
+	margin-top: 38px;
+	margin-bottom: 48px;
+	position: relative;
+}
+
+.mouseLeftButtonClickedIcon,
+.mouseUnclickedIcon {
+	object-fit: contain;
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	user-select: none;
+	z-index: 100;
+}
+
+.mouseLeftButtonClickedIcon {
+	animation: mouse-effect-fade 0.725s ease-in-out infinite alternate-reverse;
+	z-index: 101;
+}
+
+@keyframes mouse-effect-fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes mouse-movement {
+	from {
+		transform: translateX(-80px);
+	}
+
+	to {
+		transform: translateX(80px);
+	}
+}
+
+.title {
+	animation: fade-in 0.75s ease-in-out;
+	font-weight: 800;
+	font-size: 42px;
+}
+
+.description {
+	animation: fade-in 0.85s ease-in-out;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.button {
+	animation: fade-in 0.95s ease-in-out;
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-radius: 6px;
+	border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+.button:hover {
+	border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.staticHidden,
+.hidden {
+	transition: 1.1s ease-in-out;
+	opacity: 0;
+	user-select: none;
+	z-index: 0;
+}
+
+.hidden {
+	transition: 1.2s ease-in-out;
+	transform: translateY(60px);
+}
+
+@keyframes fade-in {
+	from {
+		transform: translateY(-42px);
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.glow {
+	width: 1px;
+	height: 1px;
+	border-radius: 200%;
+	transition: 1s;
+	z-index: -1;
+	position: absolute;
+	animation: smooth-glow 2s ease-in-out;
+	box-shadow: #ffffff13 0px 0px 120px 100px;
+}
+
+@keyframes smooth-glow {
+	from {
+		box-shadow: #11111100 0px 0px 120px 5px;
+	}
+
+	to {
+		box-shadow: #ffffff13 0px 0px 120px 100px;
+	}
+}

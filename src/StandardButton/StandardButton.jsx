@@ -2,14 +2,13 @@ import styles from "./StandardButton.module.css"
 
 function StandardButton({
 	onClick,
-	text,
+	className = "",
 	children,
 }) {
 	return <button
-		className={styles.button}
+		className={styles.button.concat(" ", className)}
 		onClick={onClick}
 	>
-		{text}
 		{children}
 	</button>
 }
