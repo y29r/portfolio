@@ -25,8 +25,8 @@ function StartScreen() {
 			<div className={styles.mouseBackground.concat(opened ? "" : ` ${styles.hidden}`)}>
 				<div className={styles.mouseLine}></div>
 				<div className={styles.mouseContainer}>
-					<img draggable={false} src="/StartScreenIcons/MouseLeftButton.svg" className={styles.mouseLeftButtonClickedIcon}></img>
-					<img draggable={false} src="/StartScreenIcons/MouseUnclicked.svg" className={styles.mouseUnclickedIcon}></img>
+					<img draggable={false} src="./StartScreenIcons/MouseLeftButton.svg" className={styles.mouseLeftButtonClickedIcon}></img>
+					<img draggable={false} src="./StartScreenIcons/MouseUnclicked.svg" className={styles.mouseUnclickedIcon}></img>
 				</div>
 			</div>
 
