@@ -20,7 +20,9 @@ function StartScreen() {
 			<DescriptionLabel className={styles.description.concat(opened ? "" : ` ${styles.hidden}`)}>
 				<b>Left click</b> + <b>drag</b> to orbit around my portfolio
 			</DescriptionLabel>
-
+			<DescriptionLabel className={styles.description.concat(opened ? "" : ` ${styles.hidden}`)}>
+				<b>Scroll</b> to zoom in or out
+			</DescriptionLabel>
 
 			<div className={styles.mouseBackground.concat(opened ? "" : ` ${styles.hidden}`)}>
 				<div className={styles.mouseLine}></div>

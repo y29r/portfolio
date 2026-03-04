@@ -5,7 +5,7 @@ const StartScreenContext = createContext(undefined);
 export function StartContext({
 	children
 }) {
-	const [opened, setOpened] = useState(true);
+	const [opened, setOpened] = useState(false);
 
 	return <StartScreenContext.Provider value={{
 		opened,

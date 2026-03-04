@@ -15,7 +15,7 @@ export function App() {
 	return (
 		<ExperienceContext>
 			<StartContext>
-				<StartScreen />
+				{/* <StartScreen /> */}
 				<Canvas>
 					<Experience />
 				</Canvas>
